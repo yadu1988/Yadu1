@@ -1,0 +1,31 @@
+package com.app.idemia.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.app.idemia.model.SaleItem;
+import com.app.idemia.service.SaleItemService;
+
+@RestController
+public class SaleItemController {
+	
+	@Autowired
+	private SaleItemService saleItemService;
+
+	public SaleItemController(SaleItemService saleItemService) {
+		super();
+		this.saleItemService = saleItemService;
+	}
+	
+	
+	@GetMapping("/allItem")
+   public List<SaleItem>  getAllSaleItem(){
+	   
+	   return saleItemService.findAll();
+   }	
+	
+
+}

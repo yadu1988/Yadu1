@@ -1,0 +1,5 @@
+package com.app.idemia.service;
+
+public class SaleItemService {
+
+}

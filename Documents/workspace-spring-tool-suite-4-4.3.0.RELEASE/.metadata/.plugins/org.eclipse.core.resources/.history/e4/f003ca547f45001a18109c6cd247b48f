@@ -1,0 +1,5 @@
+package com.app.idemia.model;
+
+public class SaleItem {
+
+}

@@ -1,0 +1,5 @@
+package com.app.idemia.dao;
+
+public interface SaleItemDao {
+
+}
